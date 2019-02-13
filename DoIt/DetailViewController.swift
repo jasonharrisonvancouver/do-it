@@ -18,6 +18,8 @@ class DetailViewController: UIViewController {
         if let detail = detailItem {
             if let label = detailDescriptionLabel {
                 label.text = detail.todoDescription!.description
+                
+                label.text = ("\(String(describing: detail.title!)): \(String(describing: detail.todoDescription!)), P:\(detail.priorityNumber)")
             }
         }
     }
